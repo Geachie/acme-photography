@@ -3,12 +3,13 @@
 body {
   font-family: 'Roboto Condensed';
   margin: 0;
-  background-color: #eee;
+  background: #eee;
+  height: auto;
 }
-
+/* 41:30 */
 h1 {
   font-weight: 400;
-  font-style: 2.5rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   margin: 0;
 }
@@ -48,7 +49,7 @@ main {
   padding-left: 1rem;
 }
 
-#landing-text {
+#landing-text h2 {
   color: #888;
 }
 
@@ -77,3 +78,55 @@ main {
   background: #f4f4f4;
 }
 
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: #333;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.caption {
+  padding: 0.8rem;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+/* Scree size 500px and up */
+
+@media(min-width: 500px) {
+  #landing {
+    display: flex;
+    height: 100%;
+  }
+  #landing-text {
+    height: 100vh;
+  }
+  #landing-image {
+    height: 100vh;
+  }
+}
+
+@media(min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
